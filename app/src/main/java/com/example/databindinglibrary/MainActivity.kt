@@ -12,6 +12,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        mBinding.textViewTitle.text = getString(R.string.app_name)
+
+        val student = Student("Student Name", "Student ID")
+        mBinding.student = student
     }
 }
