@@ -15,5 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         val student = Student("Student Name", "Student ID", false)
         mBinding.student = student
+
+        val view = mBinding.root
     }
 }
