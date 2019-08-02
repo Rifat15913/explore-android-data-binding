@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        val student = Student("Student Name", "Student ID")
+        val student = Student(null, "Student ID")
         mBinding.student = student
     }
 }
